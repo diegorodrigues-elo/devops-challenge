@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
+key = 'ELO_PASS'
 
 from flask import Flask
 from flask_httpauth import HTTPTokenAuth
@@ -11,7 +12,7 @@ auth = HTTPTokenAuth("Token")
 
 @auth.verify_token
 def verify_token(token):
-    return token == os.getenv("ELO_PASS")
+    return token == os.getenv(key)
 
 @app.route("/")
 @auth.login_required
