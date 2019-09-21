@@ -10,7 +10,7 @@ data "aws_availability_zones" "available" {}
 
 module "build" {
     source              = "git::https://github.com/cloudposse/terraform-aws-cicd.git?ref=master"
-    namespace           = "devops-challenge"
+    namespace           = "elo"
     stage               = "dev"
     name                = "devops-challenge"
 
@@ -22,7 +22,7 @@ module "build" {
     env                 = "dev"
 
     # Application repository on GitHub
-    github_oauth_token  = "57d945d60e632a3a715a5e8c7fd3fb9734c58d38"
+    github_oauth_token  = "f594ddee12e6d8b37e4c3be01081b8cdcf7ca984"
     repo_owner          = "leonrado"
     repo_name           = "devops-challenge"
     branch              = "leonardo-dias"
