@@ -10,7 +10,8 @@ COPY ./app/ .
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m virtualenv --python=/usr/bin/python3 $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-
+RUN pwd
 RUN pip install -r requirements.txt
+
 
 CMD [ "python", "./app.py" ]
