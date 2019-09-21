@@ -22,7 +22,7 @@ module "build" {
     env                 = "dev"
 
     # Application repository on GitHub
-    github_oauth_token  = "a12813094ecb05cedaaddb49e33651102d741f20"
+    github_oauth_token  = "57d945d60e632a3a715a5e8c7fd3fb9734c58d38"
     repo_owner          = "leonrado"
     repo_name           = "devops-challenge"
     branch              = "leonardo-dias"
