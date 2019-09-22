@@ -1,9 +1,9 @@
 FROM python:3.6
 
-COPY app/ .
-#WORKDIR /
+COPY app/ /app/
+WORKDIR /app
 RUN pwd
-RUN ls
+RUN ls -la
 RUN pip install -r requirements.txt
 
 EXPOSE 80
