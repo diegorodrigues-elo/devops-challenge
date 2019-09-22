@@ -1,17 +1,6 @@
-FROM ubuntu:18.04
-
-WORKDIR .
-
-RUN apt-get update && apt-get install \
--y --no-install-recommends python3 python3-virtualenv
-
-COPY ./app/ .
-
-ENV VIRTUAL_ENV=/opt/venv
-RUN python3 -m virtualenv --python=/usr/bin/python3 $VIRTUAL_ENV
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-#RUN pwd
+FROM python:3.6
+COPY ./app/ /app/
+WORKDIR /app
 RUN pip install -r requirements.txt
-
-
-CMD [ "python", "./app.py" ]
+EXPOSE 80
+CMD ["python", "app.py"]
