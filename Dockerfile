@@ -7,4 +7,4 @@ RUN ls -la
 RUN pip install -r requirements.txt
 
 EXPOSE 80
-CMD ["python", "application.py"]
+CMD ["python", "app.py"]
