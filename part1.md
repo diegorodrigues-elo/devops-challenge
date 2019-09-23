@@ -52,5 +52,5 @@ export GITHUB_TOKEN=YOUR_TOKEN
 * Aplique as configuração na AWS:
 
 ```bash
-./terraform apply
+./terraform apply plan001a
 ```
