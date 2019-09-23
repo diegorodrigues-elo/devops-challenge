@@ -8,8 +8,16 @@
 
 
 * Prefire criar um suite completa para fazer que vai:
-- teste
-- teste
+- Criar um Pepiline para build da imagem com o CodePipeline/CodeBuild
+- Subir a imagem para o ECR
+- Fazer o deploy no ECS
+
+As opções do conteiner e também pode ser editado no arquivo:
+
+```
+modules/ecs/task-definitions/api-task.json
+```
+Aqui também foi setado a variavel de ambiente ELO_PASS
 
 ## Edite o arquivo de variaveis
 
