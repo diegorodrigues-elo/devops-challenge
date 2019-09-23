@@ -7,10 +7,10 @@
 ![Steps](.github/images/pipeline-demo.png)
 
 
-* Prefire criar um suite completa para fazer que vai:
+* Essa suite vai :
 - Criar um Pepiline para build da imagem com o CodePipeline/CodeBuild
 - Subir a imagem para o ECR
-- Fazer o deploy no ECS
+- Fazer o deploy via CodeDeploy no ECS.
 
 As opções do conteiner e também pode ser editado no arquivo:
 
@@ -35,7 +35,7 @@ export GITHUB_TOKEN=YOUR_TOKEN
 ```
 
 #### 2) Terraform
-* Entre do diretorio Terraform:
+* Entre do diretório terraform:
 
 ```bash
 cd terraform
@@ -44,7 +44,7 @@ cd terraform
 * Rode o script `run_terraform.sh`. Ele vai baixar o terraform na versão correta.
 
 ```bash
-./run_terraform.#!/bin/sh
+./run_terraform.
 ```
 
 * Rode o comando para iniciar o Terraform
