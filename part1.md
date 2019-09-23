@@ -1,4 +1,4 @@
-## Architecture 
+## Arquitetura
 
 ![Arch](.github/images/ECS-Arquitetura.png)
 
@@ -6,3 +6,43 @@
 
 ![Steps](.github/images/pipeline-demo.png)
 
+
+* Prefire criar um suite completa para fazer que vai:
+- teste
+- teste
+
+## Edite o arquivo de variaveis
+
+Caso queria trocar alguma variavel, edite o arquivo `variables.tf`
+
+## How to Deploy
+
+### 1) Github Access Token
+* Crie o  Github Access Token. [Siga o passo a passo:](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
+
+* Export Github Token como variavel de ambiente.
+
+```bash
+export GITHUB_TOKEN=YOUR_TOKEN
+```
+
+#### 2) Terraform
+* Rode o script `./run_terraform.sh`. Ele vai baixar o terraform na versão correta.
+
+* Rode o comando para iniciar o Terraform
+
+```bash
+./terraform init
+```
+
+* Rode o terraform plan
+
+```bash
+./terraform plan -out=plan001
+```
+
+* Aplique as configuração na AWS:
+
+```bash
+./terraform apply
+```
