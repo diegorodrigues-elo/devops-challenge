@@ -35,6 +35,12 @@ export GITHUB_TOKEN=YOUR_TOKEN
 ```
 
 #### 2) Terraform
+* Entre do diretorio Terraform:
+
+```bash
+cd terraform
+```
+
 * Rode o script `./run_terraform.sh`. Ele vai baixar o terraform na versão correta.
 
 * Rode o comando para iniciar o Terraform
