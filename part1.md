@@ -41,7 +41,11 @@ export GITHUB_TOKEN=YOUR_TOKEN
 cd terraform
 ```
 
-* Rode o script `./run_terraform.sh`. Ele vai baixar o terraform na versão correta.
+* Rode o script `run_terraform.sh`. Ele vai baixar o terraform na versão correta.
+
+```bash
+./run_terraform.#!/bin/sh
+```
 
 * Rode o comando para iniciar o Terraform
 
